@@ -71,7 +71,7 @@ class MyApp extends StatelessWidget {
       );
     }
 
-  //Prak 2 Langkah 2: Buat widget buttonSection
+    //Prak 2 Langkah 2: Buat widget buttonSection
     Color color = Theme.of(context).primaryColor;
 
     Widget buttonSection = Row(
@@ -83,7 +83,7 @@ class MyApp extends StatelessWidget {
       ],
     );
 
-   //Prak 3 Langkah 1: Buat widget textSection
+    //Prak 3 Langkah 1: Buat widget textSection
     Widget textSection = Container(
       padding: const EdgeInsets.all(32),
       child: const Text(
@@ -97,20 +97,23 @@ class MyApp extends StatelessWidget {
     );
 
     return MaterialApp(
-      title: 'Flutter layout: Syava Aprilia - 2241760129', // Nama dan NIM Anda
+      title: 'Flutter layout: Syava Aprilia - 2241760129',
       home: Scaffold(
         appBar: AppBar(
           title: const Text('Flutter layout demo'),
         ),
-        body: Center(
-          child: Column(
-            children: [
-              titleSection, // Bagian judul
-              buttonSection, // Bagian tombol
-              textSection, // Bagian teks
-
-            ],
-          ),
+        body: ListView(
+          children: [
+            Image.asset(
+              'images/bali.jpeg',
+              width: 600,
+              height: 270,
+              fit: BoxFit.cover,
+            ),
+            titleSection, // Bagian judul
+            buttonSection, // Bagian tombol
+            textSection, // Bagian teks
+          ],
         ),
       ),
     );
