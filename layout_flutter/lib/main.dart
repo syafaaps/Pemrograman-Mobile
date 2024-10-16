@@ -24,14 +24,14 @@ class MyApp extends StatelessWidget {
                   padding: const EdgeInsets.only(
                       bottom: 8), // Padding bawah 8 piksel
                   child: const Text(
-                    'Wisata Gunung di Batu',
+                    'Pura Uluwatu Bali',
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                     ),
                   ),
                 ),
                 const Text(
-                  'Batu, Malang, Indonesia',
+                  'Pecatu, Kec. Kuta Sel,Kab. Badung, Bali, Indonesia',
                   style: TextStyle(
                     color: Colors.grey, // Teks berwarna abu-abu
                   ),
@@ -83,6 +83,19 @@ class MyApp extends StatelessWidget {
       ],
     );
 
+   //Prak 3 Langkah 1: Buat widget textSection
+    Widget textSection = Container(
+      padding: const EdgeInsets.all(32),
+      child: const Text(
+        'Pura Luhur Uluwatu terletak di Desa Pecatu, Kuta Selatan, Badung, Bali. '
+        'Pura ini berdiri di atas tebing setinggi 97 meter yang menjorok ke laut dan merupakan salah satu Pura Sad Kayangan, dipercaya sebagai penyangga 9 mata angin oleh umat Hindu. '
+        'Awalnya, pura ini digunakan untuk memuja Empu Kuturan, seorang pendeta suci abad ke-11, dan kemudian Dang Hyang Nirartha yang mencapai moksa di sini, yang menginspirasi nama "Luhur Uluwatu." '
+        'Selain menjadi tempat ibadah, Pura Uluwatu juga terkenal dengan Pantai Pecatu di bawahnya, yang menjadi destinasi selancar internasional.'
+        'Syava Aprilia 2241760129',
+        softWrap: true,
+      ),
+    );
+
     return MaterialApp(
       title: 'Flutter layout: Syava Aprilia - 2241760129', // Nama dan NIM Anda
       home: Scaffold(
@@ -94,6 +107,7 @@ class MyApp extends StatelessWidget {
             children: [
               titleSection, // Bagian judul
               buttonSection, // Bagian tombol
+              textSection, // Bagian teks
 
             ],
           ),
